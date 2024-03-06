@@ -1,4 +1,4 @@
-const Locations = require("./lib/locations");
+const Locations = require("../lib/locations");
 
 module.exports.places = async (event) => {
   const req = JSON.parse(event.body);

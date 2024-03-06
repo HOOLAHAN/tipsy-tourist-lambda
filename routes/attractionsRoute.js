@@ -1,4 +1,4 @@
-const Attractions = require("./lib/attractions");
+const Attractions = require("../lib/attractions");
 
 module.exports.attractions = async (event) => {
   const req = JSON.parse(event.body);

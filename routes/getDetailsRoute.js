@@ -1,4 +1,4 @@
-const PlaceDetails = require("./lib/placeDetails");
+const PlaceDetails = require("../lib/placeDetails");
 
 module.exports.getDetails = async (event) => {
   const req = JSON.parse(event.body);

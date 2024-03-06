@@ -12,27 +12,33 @@ provider:
     cors: true
 
 functions:
-  function1:
+  function:
     handler: index.handler
     events:
       - httpApi:
           path: /test
           method: get
   places:
-    handler: places.places
+    handler: routes/placesRoute.places
     events:
       - httpApi:
           path: /places
           method: post
   attractions:
-    handler: attractions.attractions
+    handler: routes/attractionsRoute.attractions
     events:
       - httpApi:
           path: /attractions
           method: post
   getDetails:
-    handler: getDetails.getDetails
+    handler: routes/getDetailsRoute.getDetails
     events:
       - httpApi:
           path: /get-details
+          method: post
+  geocode:
+    handler: routes/geocodeRoute.geocode
+    events:
+      - httpApi:
+          path: /geocode
           method: post
