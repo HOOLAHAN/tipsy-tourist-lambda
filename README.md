@@ -9,7 +9,7 @@ Welcome to the `tipsy-tourist-lambda` project! This repository houses the server
 Our project is structured into two main directories, each playing a crucial role in the functionality of the Tipsy Tourist Lambda service:
 
 - `lib/`: Contains core functionality with JavaScript files for attractions (`attractions.js`), geocoding (`geocode.js`), location handling (`locations.js`), and place details retrieval (`placeDetails.js`).
-- `routes/`: Hosts route handler files for interfacing with our API endpoints. This includes `attractionsRoute.js`, `geocodeRoute.js`, `getDetailsRoute.js`, and `placesRoute.js`. The `index.js` file in this directory acts as the entry point for routing.
+- `routes/`: Hosts route handler files for interfacing with our API endpoints. This includes `attractionsRoute.js`, `geocodeRoute.js`, `getDetailsRoute.js`, and `placesRoute.js`. 
 
 Additionally, the `serverless.yml` file defines the AWS Lambda configuration, detailing our service structure, provider settings, environment variables, and the HTTP API events that trigger our Lambda functions.
 
