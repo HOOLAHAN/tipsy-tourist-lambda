@@ -1,9 +1,9 @@
 service: tipsy-tourist-lambda
-frameworkVersion: '3'
+frameworkVersion: '4'
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  runtime: nodejs22.x
   stage: prod
   region: eu-west-2
   environment:
