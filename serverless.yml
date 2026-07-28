@@ -7,7 +7,7 @@ provider:
   stage: prod
   region: eu-west-2
   environment:
-    GOOGLE_MAPS_API_KEY: ${env:GOOGLE_MAPS_API_KEY}
+    TIPSY_TOURIST_GOOGLE_MAPS_SERVER_KEY: ${env:TIPSY_TOURIST_GOOGLE_MAPS_SERVER_KEY}
   httpApi:
     cors: true
 

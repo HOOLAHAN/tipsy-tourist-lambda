@@ -24,7 +24,7 @@ Additionally, the `serverless.yml` file defines the AWS Lambda configuration, de
 - **Runtime**: Node.js 18.x
 - **Stage**: Production (`prod`)
 - **Region**: eu-west-2 (London)
-- **Environment Variables**: Uses `GOOGLE_MAPS_API_KEY` from environment settings
+- **Environment Variables**: Uses `TIPSY_TOURIST_GOOGLE_MAPS_SERVER_KEY` from environment settings
 - **HTTP API**: Configured with CORS enabled
 
 ### Lambda Functions
@@ -71,7 +71,7 @@ Our service comprises five Lambda functions, each designed to handle specific as
 
 ### Configuration
 
-Ensure you have the `GOOGLE_MAPS_API_KEY` set up in your environment variables or in the AWS Lambda console under the Environment Variables section for your Lambda functions.
+Ensure you have `TIPSY_TOURIST_GOOGLE_MAPS_SERVER_KEY` set in the deployment environment. Serverless passes it to the deployed Lambda functions.
 
 ### Deployment
 
