@@ -36,6 +36,12 @@ functions:
       - httpApi:
           path: /get-details
           method: post
+  placePhoto:
+    handler: routes/placePhotoRoute.placePhoto
+    events:
+      - httpApi:
+          path: /place-photo
+          method: get
   geocode:
     handler: routes/geocodeRoute.geocode
     events:
