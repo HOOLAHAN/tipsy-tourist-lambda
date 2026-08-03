@@ -5,7 +5,7 @@ module.exports.places = async (event) => {
  
   const lat = req.lat;
   const lng = req.lng;
-  const data = await Locations(lat, lng);
+  const data = await Locations(lat, lng, req.radius);
 
   return {
     statusCode: 200,
