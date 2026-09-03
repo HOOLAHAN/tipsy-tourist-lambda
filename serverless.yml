@@ -42,6 +42,18 @@ functions:
       - httpApi:
           path: /place-photo
           method: get
+  autocomplete:
+    handler: routes/autocompleteRoute.autocomplete
+    events:
+      - httpApi:
+          path: /autocomplete
+          method: post
+  directions:
+    handler: routes/directionsRoute.directions
+    events:
+      - httpApi:
+          path: /directions
+          method: post
   geocode:
     handler: routes/geocodeRoute.geocode
     events:
